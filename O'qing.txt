@@ -1,0 +1,3 @@
+Project frontend reactjs bilan bo'lishi kerak
+
+backend o'zim qilaman
