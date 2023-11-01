@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './layout/Layout'
-import { HomePage } from './pages'
+import { ErrorPage, HomePage, Login, Register } from './pages'
 
 const App = () => {
 	return (
@@ -8,6 +8,9 @@ const App = () => {
 			<Route path='/' element={<Layout />}>
 				<Route index element={<HomePage />}></Route>
 			</Route>
+			<Route path='/login' element={<Login />} />
+			<Route path='/register' element={<Register />} />
+			<Route path='/error' element={<ErrorPage />} />
 		</Routes>
 	)
 }
