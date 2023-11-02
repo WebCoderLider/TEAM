@@ -1,11 +1,10 @@
-import React from 'react'
 import './heading.scss'
 
-function Heading() {
+function Heading({ title, description }) {
   return (
     <div className="heading">
-      <h1>O’qituvchilarimiz</h1>
-      <p>O’qituvchilar haqida qisqacha ma’lumotlar to’plami</p>
+      <h1>{title}</h1>
+      <p>{description}</p>
     </div>
   )
 }
