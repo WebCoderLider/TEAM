@@ -43,3 +43,7 @@ p {
   max-width: 1530px;
   margin: 0 auto;
 }
+
+.hero__title {
+  color: #050c26;
+}

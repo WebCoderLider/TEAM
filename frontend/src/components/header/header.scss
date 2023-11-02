@@ -1,11 +1,10 @@
-
 .header {
   background-color: #fdf8ee;
   padding-top: 47px;
   padding-bottom: 60.2px;
 }
 .header__navbar__links {
-  color: #1d1d1d; 
+  color: #1d1d1d;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -17,8 +16,59 @@
   border-radius: 218px;
   background: #4d2c5e;
   color: #fff;
-  color: #fff;
   font-size: 25px;
   font-weight: 500;
   margin-left: 100px;
+}
+
+.header__list {
+  display: flex;
+}
+.header__responsive__list {
+  transform: translateX(2000%);
+  position: fixed;
+}
+
+.responsive__navbar {
+  display: none;
+}
+
+.responsive__navbar {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000084;
+}
+.header__responsive__list {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  height: 100vh;
+  transform: none;
+  padding-left: 100px;
+  text-align: end;
+  .header__navbar__responsive__links {
+    display: block;
+    padding: 10px 25px;
+  }
+}
+.header__login__responsive__link {
+  display: block;
+  margin-top: 20px;
+  padding: 18px 63px;
+  border-radius: 218px;
+  background: #4d2c5e;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .header__list {
+    display: none !important;
+  }
 }
