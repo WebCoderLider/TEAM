@@ -1,10 +1,13 @@
 import { Hero } from '../../components/hero/Hero'
 
+import { CourseInfo, Courses } from '../../components'
 const HomePage = () => {
   return (
-    <div>
+    <>
       <Hero />
-    </div>
+      <CourseInfo />
+      <Courses />
+    </>
   )
 }
 
