@@ -1,0 +1,22 @@
+.heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 9px;
+  h1 {
+    color: #000;
+    font-family: Jost;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+  p {
+    color: #8a8a8a;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
