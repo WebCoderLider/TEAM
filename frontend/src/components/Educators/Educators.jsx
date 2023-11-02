@@ -5,7 +5,7 @@ import './educators.scss'
 
 function Educators() {
   return (
-    <section className="educators_section">
+    <section className="educators_section container">
       <Heading
         title="O’qituvchilarimiz"
         description="O’qituvchilar haqida qisqacha ma’lumotlar to’plami"
