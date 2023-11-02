@@ -1,1 +1,23 @@
-.header
+.header {
+  background-color: #fdf8ee;
+  padding-top: 47px;
+  padding-bottom: 60.2px;
+}
+.header__navbar__links {
+  color: #1d1d1d; 
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.header__login__link {
+  padding: 18px 63px;
+  border-radius: 218px;
+  background: #4d2c5e;
+  color: #fff;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 100px;
+}
