@@ -3,16 +3,6 @@ import './header.scss'
 import Logo from '../../assets/images/Logo.png'
 import { useRef } from 'react'
 const Header = () => {
-  const navbar = useRef()
-  const responsiveNavbarClose = (evt) => {
-    if (evt.target.className == 'responsive__navbar') {
-      evt.target.className = 'd-none'
-    }
-  }
-  const toggleNavbarOn = (e) => {
-    navbar.current.className = ''
-    e.target.className = 'd-none'
-  }
   return (
     <header className="header">
       <div className="container">
@@ -45,14 +35,8 @@ const Header = () => {
               Kirish
             </a>
           </ul>
-          <button onClick={toggleNavbarOn} className="btn ">
-            &#9776;
-          </button>
-          <div
-            className="responsive__navbar"
-            ref={navbar}
-            onClick={responsiveNavbarClose}
-          >
+
+          <div className="responsive__navbar">
             <ul className="gap-4 align-items-center header__responsive__list ">
               <li>
                 <a
