@@ -1,0 +1,79 @@
+.course-article {
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  padding: 13px;
+  position: relative;
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__type {
+    color: #acacac;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 13px;
+  }
+  &__title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  &__price {
+    color: #ff7426;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &__constans {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    span {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+      .icon {
+        color: red;
+      }
+      p {
+        color: #acacac;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+  &__button-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__button {
+    position: absolute;
+    bottom: -30px;
+    border-radius: 96px;
+    background: #ff7426;
+    border: none;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 13px 30px;
+  }
+}
