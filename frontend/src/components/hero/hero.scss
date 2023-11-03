@@ -31,6 +31,7 @@
   .hero__form {
     position: relative;
     .hero__input {
+      display: none;
       max-width: calc(568px - 57px);
       padding-left: 57px;
       width: 100%;

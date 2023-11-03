@@ -50,6 +50,7 @@
   transform: none;
   padding-left: 100px;
   text-align: end;
+  padding-top: 50px;
   .header__navbar__responsive__links {
     display: block;
     padding: 10px 25px;
@@ -67,8 +68,26 @@
   margin-right: 20px;
 }
 
+.responsive__navbar__button {
+  border: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  background-image: url('../../assets/icons/menuIcon.svg');
+  display: none;
+}
+
+.menu__closer {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+
 @media screen and (max-width: 800px) {
   .header__list {
     display: none !important;
+  }
+  .responsive__navbar__button {
+    display: inline-block;
   }
 }

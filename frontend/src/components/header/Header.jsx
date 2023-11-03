@@ -3,10 +3,21 @@ import './header.scss'
 import Logo from '../../assets/images/Logo.png'
 import { useRef } from 'react'
 const Header = () => {
+  const menuNavbar = useRef()
+
+  const menuOpen = () => {
+    menuNavbar.current.className += ' d-block'
+    document.body.style.overflow = 'hidden'
+  }
+  const menuClose = () => {
+    menuNavbar.current.className = 'responsive__navbar'
+    document.body.style = ''
+  }
+
   return (
     <header className="header">
       <div className="container">
-        <nav className="d-flex justify-content-between">
+        <nav className="d-flex justify-content-between align-items-center">
           <a href="#">
             <img src={Logo} alt="Logo" />
           </a>
@@ -35,8 +46,11 @@ const Header = () => {
               Kirish
             </a>
           </ul>
-
-          <div className="responsive__navbar">
+          <button
+            className="responsive__navbar__button "
+            onClick={menuOpen}
+          ></button>
+          <div ref={menuNavbar} className="responsive__navbar">
             <ul className="gap-4 align-items-center header__responsive__list ">
               <li>
                 <a
@@ -74,7 +88,9 @@ const Header = () => {
                 Kirish
               </a>
             </ul>
-            <button className="btn btn-danger">&#x2613;</button>
+            <button className="btn btn-danger menu__closer" onClick={menuClose}>
+              &#x2613;
+            </button>
           </div>
         </nav>
       </div>
