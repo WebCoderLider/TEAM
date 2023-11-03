@@ -5,7 +5,7 @@ import { littleGirl, starIcons } from '../../assets'
 function CourseArticle() {
   return (
     <div className="course-article">
-      <img src={littleGirl} alt="little-girl-participating" />
+      <img src={littleGirl} alt="little-girl-participating" className='course-article__image'/>
       <span className="course-article__head">
         <h4 className="course-article__type">UI/UX Dizayner</h4>
         <div>

@@ -4,6 +4,11 @@
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
   padding: 13px;
   position: relative;
+  &__image {
+    width: 100%;
+    border-radius: 14px;
+    background: #b17373;
+  }
   &__head {
     display: flex;
     align-items: center;
@@ -76,4 +81,7 @@
     line-height: normal;
     padding: 13px 30px;
   }
+}
+.course-article:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
