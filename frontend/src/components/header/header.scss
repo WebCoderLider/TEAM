@@ -29,9 +29,9 @@
   position: fixed;
 }
 
-.responsive__navbar {
-  display: none;
-}
+// .responsive__navbar {
+//   display: none;
+// }
 
 .responsive__navbar {
   width: 100vw;
@@ -40,7 +40,10 @@
   top: 0;
   left: 0;
   background-color: #00000084;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
 }
+
 .header__responsive__list {
   position: fixed;
   top: 0;
@@ -50,7 +53,7 @@
   transform: none;
   padding-left: 100px;
   text-align: end;
-  padding-top: 50px;
+  padding-top: 90px;
   .header__navbar__responsive__links {
     display: block;
     padding: 10px 25px;
@@ -80,7 +83,9 @@
 .menu__closer {
   position: absolute;
   right: 25px;
-  top: 10px;
+  top: 50px;
+  border: none;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 800px) {

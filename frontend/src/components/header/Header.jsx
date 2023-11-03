@@ -1,17 +1,29 @@
 import './header.scss'
 
 import Logo from '../../assets/images/Logo.png'
+import Xicon from '../../assets/images/Xicon.png'
 import { useRef } from 'react'
+
 const Header = () => {
   const menuNavbar = useRef()
 
+  // const menuOpen = () => {
+  //   menuNavbar.current.className += ' d-block'
+  //   document.body.style.overflow = 'hidden'
+  // }
+  // const menuClose = () => {
+  //   menuNavbar.current.className = 'responsive__navbar'
+  //   document.body.style = ''
+  // }
+
   const menuOpen = () => {
-    menuNavbar.current.className += ' d-block'
+    menuNavbar.current.style.transform = 'translateX(0)'
     document.body.style.overflow = 'hidden'
   }
+
   const menuClose = () => {
-    menuNavbar.current.className = 'responsive__navbar'
-    document.body.style = ''
+    menuNavbar.current.style.transform = 'translateX(100%)'
+    document.body.style.overflow = 'auto'
   }
 
   return (
@@ -19,7 +31,7 @@ const Header = () => {
       <div className="container">
         <nav className="d-flex justify-content-between align-items-center">
           <a href="#">
-            <img src={Logo} alt="Logo" />
+            <img width={'60px'} src={Logo} alt="Logo" />
           </a>
           <ul className="gap-4 align-items-center header__list ">
             <li>
@@ -88,8 +100,8 @@ const Header = () => {
                 Kirish
               </a>
             </ul>
-            <button className="btn btn-danger menu__closer" onClick={menuClose}>
-              &#x2613;
+            <button className=" menu__closer" onClick={menuClose}>
+              <img src={Xicon} width={'30px'} alt="" />
             </button>
           </div>
         </nav>
