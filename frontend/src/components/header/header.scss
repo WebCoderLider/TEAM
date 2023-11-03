@@ -24,24 +24,19 @@
 .header__list {
   display: flex;
 }
-.header__responsive__list {
-  transform: translateX(2000%);
-  position: fixed;
-}
 
 // .responsive__navbar {
 //   display: none;
 // }
 
 .responsive__navbar {
+  transform: translateX(100%);
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #00000084;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(100%);
 }
 
 .header__responsive__list {
@@ -54,6 +49,8 @@
   padding-left: 100px;
   text-align: end;
   padding-top: 90px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
   .header__navbar__responsive__links {
     display: block;
     padding: 10px 25px;

@@ -6,22 +6,16 @@ import { useRef } from 'react'
 
 const Header = () => {
   const menuNavbar = useRef()
-
-  // const menuOpen = () => {
-  //   menuNavbar.current.className += ' d-block'
-  //   document.body.style.overflow = 'hidden'
-  // }
-  // const menuClose = () => {
-  //   menuNavbar.current.className = 'responsive__navbar'
-  //   document.body.style = ''
-  // }
+  const menuList = useRef()
 
   const menuOpen = () => {
     menuNavbar.current.style.transform = 'translateX(0)'
+    menuList.current.style.transform = 'translateX(0)'
     document.body.style.overflow = 'hidden'
   }
 
   const menuClose = () => {
+    menuList.current.style.transform = 'translateX(100%)'
     menuNavbar.current.style.transform = 'translateX(100%)'
     document.body.style.overflow = 'auto'
   }
@@ -63,7 +57,10 @@ const Header = () => {
             onClick={menuOpen}
           ></button>
           <div ref={menuNavbar} className="responsive__navbar">
-            <ul className="gap-4 align-items-center header__responsive__list ">
+            <ul
+              ref={menuList}
+              className="gap-4 align-items-center header__responsive__list "
+            >
               <li>
                 <a
                   className="text-black header__navbar__responsive__links"
@@ -99,10 +96,10 @@ const Header = () => {
               <a href="" className=" header__login__responsive__link">
                 Kirish
               </a>
-            </ul>
             <button className=" menu__closer" onClick={menuClose}>
               <img src={Xicon} width={'30px'} alt="" />
             </button>
+            </ul>
           </div>
         </nav>
       </div>
