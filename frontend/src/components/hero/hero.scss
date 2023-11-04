@@ -8,6 +8,7 @@
   &__inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .hero__title {
@@ -64,8 +65,8 @@
 
 @media screen and (max-width: 1525px) {
   .hero__img {
-    width: 100%;
-    max-width: 1000px;
+    width: 100% !important;
+    max-width: 900px !important;
     margin-bottom: 30px;
   }
   .hero__inner {
