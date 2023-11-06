@@ -60,3 +60,13 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .course-info {
+    &__article {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+}
