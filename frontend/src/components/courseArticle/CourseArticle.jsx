@@ -1,11 +1,20 @@
 import './CourseArticle.scss'
-import 'boxicons'
-import { littleGirl, starIcons } from '../../assets'
+import {
+  littleGirl,
+  starIcons,
+  timeIcon,
+  downloadIcon,
+  videoIcon,
+} from '../../assets'
 
 function CourseArticle() {
   return (
     <div className="course-article">
-      <img src={littleGirl} alt="little-girl-participating" className='course-article__image'/>
+      <img
+        src={littleGirl}
+        alt="little-girl-participating"
+        className="course-article__image"
+      />
       <span className="course-article__head">
         <h4 className="course-article__type">UI/UX Dizayner</h4>
         <div>
@@ -20,15 +29,15 @@ function CourseArticle() {
       <span className="course-article__price">$98</span>
       <div className="course-article__constans">
         <span>
-          <box-icon name="time-five" className="icon"></box-icon>
+          <img src={timeIcon} alt="video icon" />
           <p>22soat, 30m</p>
         </span>
         <span>
-          <box-icon name="video"></box-icon>
+          <img src={videoIcon} alt="video icon" />
           <p>23 ta video</p>
         </span>
         <span>
-          <box-icon name="upload"></box-icon>
+          <img src={downloadIcon} alt="video icon" />
           <p>0 ta yuklab olindi</p>
         </span>
       </div>
