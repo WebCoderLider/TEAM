@@ -7,8 +7,28 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
+  &__head {
+    display: flex;
+    align-items: center;
+  }
+  &__arrow {
+    margin-top: -70px;
+    max-width: 120px;
+  }
+  &__lamp {
+    width: 120px;
+  }
 }
-
+@media screen and (min-width: 1920px) {
+  .courses {
+    &__arrow {
+      margin-right: -120px;
+    }
+    &__lamp {
+      margin-left: -120px;
+    }
+  }
+}
 @media screen and (max-width: 1000px) {
   .courses {
     &__content {
@@ -24,6 +44,10 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       row-gap: 50px;
+    }
+    &__arrow,
+    &__lamp {
+      display: none;
     }
   }
 }

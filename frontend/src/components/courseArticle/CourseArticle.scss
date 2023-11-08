@@ -49,8 +49,23 @@
       display: flex;
       align-items: center;
       column-gap: 6px;
-      .icon {
-        color: red;
+      .icon-time {
+        width: 19px;
+        height: 19px;
+        color: #000;
+        cursor: pointer;
+      }
+      .icon-video {
+        width: 28px;
+        height: 28px;
+        color: #000;
+        cursor: pointer;
+      }
+      .icon-download {
+        width: 18px;
+        height: 18px;
+        color: #000;
+        cursor: pointer;
       }
       p {
         color: #acacac;
@@ -70,7 +85,7 @@
   }
   &__button {
     position: absolute;
-    bottom: -30px;
+    bottom: -28px;
     border-radius: 96px;
     background: #ff7426;
     border: none;

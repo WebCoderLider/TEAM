@@ -5,6 +5,7 @@ import {
   timeIcon,
   downloadIcon,
   videoIcon,
+  starLiteIcon,
 } from '../../assets'
 
 function CourseArticle() {
@@ -22,22 +23,26 @@ function CourseArticle() {
           <img src={starIcons} alt="start icons" />
           <img src={starIcons} alt="start icons" />
           <img src={starIcons} alt="start icons" />
-          <img src={starIcons} alt="start icons" />
+          <img src={starLiteIcon} alt="start icons" />
         </div>
       </span>
       <h3 className="course-article__title">UI/UX DIZAYNERLIK BO’YICHA</h3>
       <span className="course-article__price">$98</span>
       <div className="course-article__constans">
         <span>
-          <img src={timeIcon} alt="video icon" />
+          <img src={timeIcon} alt="time icon" className="icon-time" />
           <p>22soat, 30m</p>
         </span>
         <span>
-          <img src={videoIcon} alt="video icon" />
+          <img src={videoIcon} alt="video icon" className="icon-video" />
           <p>23 ta video</p>
         </span>
         <span>
-          <img src={downloadIcon} alt="video icon" />
+          <img
+            src={downloadIcon}
+            alt="download icon"
+            className="icon-download"
+          />
           <p>0 ta yuklab olindi</p>
         </span>
       </div>
